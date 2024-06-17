@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.css">
+</head>
+<body>
+<form action="mission1" method="get">
+    <input type="text" name="pathValue"/>
+    <input type="submit" vlue="전송"/>
+</form>
+<form action="/submitOption" method="get">
+    <input type="text" name="pathValue"/>
+    <label for="options">선택:</label>
+    <select name="selectedOption" id="options">
+        <option value="Option1">Option 1</option>
+        <option value="Option2">Option 2</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+<script>
+    const flashMessage2 = '[[${ flashMessage2 }]]';
+    console.log(flashMessage2);
+    if(flashMessage2) {
+        alert(flashMessage2);
+    }
+</script>
+</body>
+</html>
