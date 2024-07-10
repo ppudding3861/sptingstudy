@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew 블로그</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<main>
+    <div th:replace="fragments/aside :: aside"></div>
+    <section>
+        <div class="tabs">
+            <button class="active">글</button>
+            <button>시리즈</button>
+            <button>소개</button>
+        </div>
+        <article>
+            <img src="/img/post-image.jpg" alt="포스트 이미지">
+            <h2 th:text="${post.title}">DHCP 의 원리 - 인터넷이 저절로 되는 이유</h2>
+            <p th:text="${post.content}">요즘, 어디든 자리를 이동하면 사람들이 찾는 첫것이 있습니다.바로, WIFI 입니다.카페에서 WIFI를 잡을 때를 상상해보세요.잡을 수 있는 WIFI 목록을 보고, 선택하고, 비밀번호를 입력하면-- 끝입니다.그러면, 이 모든 과정을 한번도 생각해본적 있나요? 어떤...</p>
+            <div class="tags">
+                <span>DHCP</span>
+                <span>IP할당</span>
+                <span>SSID</span>
+                <span>wifi</span>
+                <span>유동IP</span>
+            </div>
+            <div class="meta">
+                <span>2024년 6월 11일</span>
+                <span>0개의 댓글</span>
+                <span>💬 12</span>
+            </div>
+        </article>
+    </section>
+</main>
+</body>
+</html>
